@@ -79,6 +79,26 @@ export const projects: ProjectCardProps[] = [
       'This project focuses on robust real-time communication. It implements a full-stack architecture with Next.js for the frontend, Socket.IO for live updates, and Prisma for database management. Key features include user authentication and authorization using NextAuth/JWT/session-based methods, message persistence, and efficient event handling to ensure a seamless chat experience.',
     graphic: '/projects/relay.png',
     github: 'https://github.com/tanishsingla51/relay',
+    liveLink: 'https://relay-lovat.vercel.app/'
+  },
+  {
+    title: 'euno',
+    subTitle:
+      'AI-powered voice companion app that enables natural, empathetic conversations with users in real time.',
+    description:
+      'Designed to help people relieve stress, loneliness, and freely share their thoughts through interactive voice dialogues..',
+    technologies: [
+      'Next.js', // Using the mapping 'React.js'
+      'Supabase',
+      'Websocket', // From Node.js/Express.js
+      'next-auth', // From Node.js/Express.js
+      'Razorpay',
+    ],
+    details:
+      'Built with cutting-edge speech recognition, emotion detection, and AI-driven conversation intelligence for a human-like experience.',
+    graphic: '/projects/euno.png',
+    github: 'https://github.com/ikunal-04/talking',
+    liveLink: 'https://www.euno.live/'
   },
   {
     title: 'ArchitectureAI',
@@ -98,41 +118,7 @@ export const projects: ProjectCardProps[] = [
       'ArchitectureAI is designed for rapid backend development. It uses the Gemini API for AI-Powered Generation, creating well-formatted, structured code with syntax highlighting (Markdown Output). The platform supports Multiple Technologies and frameworks, featuring a Modern UI built with React and Tailwind CSS, and offering a Copy to Clipboard feature for generated code.',
     graphic: '/projects/architectureai.png',
     github: 'https://github.com/tanishsingla51/ArchitectureAI',
+    liveLink: 'https://architecture-ai-eta.vercel.app/'
   },
-  {
-    title: 'Chat-app',
-    subTitle:
-      'Real-time messaging platform with secure JWT authentication and authorization, supporting text and image sharing.',
-    description:
-      'Developed using React.js, MongoDB, Node.js/Express.js, and Web Socket.io. The application features a responsive and interactive UI built with DaisyUI, enabling users to login, see their friends, send real-time messages and images, and manage their profile.',
-    technologies: [
-      'React.js', // Using the mapping 'React.js'
-      'MongoDB',
-      'Node.js', // From Node.js/Express.js
-      'Express.js', // From Node.js/Express.js
-      'TailwindCSS',
-    ],
-    details:
-      'The project focuses on real-time communication and security. It implements robust authentication and authorization features using JWT for secure user access. The frontend, designed with React.js and DaisyUI, provides an interactive landing page where users can engage in real-time chats, send images, change their profile photo, and view other users\' profiles.',
-    graphic: '/projects/chat-app.png',
-    github: 'https://github.com/tanishsingla51/CHAT-APP',
-  },
-  {
-    title: 'Paytm-app',
-    subTitle:
-      'Full-stack payment application clone with a user dashboard for transaction history and JWT-based secure access.',
-    description:
-      'Developed a responsive and interactive user interface using React.js for the frontend. The application features a user-friendly dashboard for viewing transaction history and account details, with secure authentication and authorization implemented using JWT.',
-    technologies: [
-      'React.js', // Using the mapping 'React.js'
-      'MongoDB',
-      'Node.js', // From Node.js/Express.js
-      'Express.js', // From Node.js/Express.js
-      'TailwindCSS',
-    ],
-    details:
-      'This project demonstrates full-stack development proficiency, utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js). Key features include secure user access via JWT-based authentication and a clear, responsive dashboard design to manage and view transaction details.',
-    graphic: '/projects/paytm-app.png',
-    github: 'https://github.com/tanishsingla51/paytm-1',
-  },
+  
 ];

@@ -27,6 +27,8 @@ import { TbFileReport } from 'react-icons/tb';
 import { PiSlideshowDuotone } from 'react-icons/pi';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 import { PiStudent } from 'react-icons/pi';
+import { TbWorldWww } from 'react-icons/tb';
+
 import {
   AlertDialog,
   AlertDialogTitle,
@@ -52,6 +54,7 @@ export interface ProjectCardProps {
   slides?: string;
   instructorGuide?: string;
   studentGuide?: string;
+  liveLink?: string;
   app?: string;
   ref?: Ref<HTMLDivElement>;
 }
@@ -82,6 +85,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
   slides,
   instructorGuide,
   studentGuide,
+  liveLink,
   app,
   ref,
   ...rest
@@ -146,50 +150,16 @@ export const ProjectCard: FC<ProjectCardProps> = ({
                 </Button>
               </Link>
             )}
+            {liveLink && (
+              <Link href={liveLink} target='_blank'>
+                <Button className='flex gap-x-1' variant='outline'>
+                  <TbWorldWww /> Live Demo
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
-        {/* <Avatar className='relative h-auto w-full rounded-lg border border-secondary shadow-sm md:w-[45%]'>
-          {graphic && graphic.length !== 0 && (
-            <AvatarImage
-              onMouseEnter={onMouseEnterGraphic}
-              onMouseLeave={onMouseLeaveGraphic}
-              className='aspect-auto hover:cursor-pointer'
-              src={graphic}
-            />
-          )}
-          <AvatarFallback className='rounded-none'>
-            <Skeleton className='h-[200px] w-full' />
-          </AvatarFallback>
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
-              <Button
-                onMouseEnter={onMouseEnterGraphic}
-                onMouseLeave={onMouseLeaveGraphic}
-                variant='outline'
-                className={cn(
-                  'absolute right-2 top-2 px-2 py-0 text-[0.7rem] transition-opacity',
-                  isGraphicHovered ? 'opacity-100' : 'opacity-0'
-                )}
-              >
-                In-depth view
-              </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent className='h-auto w-[95%] md:w-full md:max-w-[1000px]'>
-              <AlertDialogTitle>{title}</AlertDialogTitle>
-              <AlertDialogDescription>
-                {graphic && graphic.length !== 0 && (
-                  <AvatarImage
-                    className='aspect-auto rounded-lg'
-                    src={graphic}
-                  />
-                )}
-              </AlertDialogDescription>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Exit in-depth view</AlertDialogCancel>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
-        </Avatar> */}
+       
       </CardContent>
     </Card>
   );

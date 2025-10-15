@@ -24,7 +24,7 @@ export const AboutText = () => {
       <div className='pt-3' />
       <div className='flex flex-wrap gap-3'>
         <Link
-          href='https://drive.google.com/file/d/11rjkxKEYvRjuDcGRuMUOEGolcvfeqGgh/view?usp=drive_link'
+          href='https://drive.google.com/file/d/1OW2ntqqltNYT6FolIKVOOaxB1M1Ump8K/view?usp=sharing'
           target='_blank'
         >
           <Button variant='outline' className='flex w-fit gap-x-1'>
